@@ -81,8 +81,8 @@ export default {
     },
     deleteUser(id){
       this.$store.dispatch('request/delete_user', {id: id}).then((x) => {
-        this.getUsers();
         this.$toast.success('спешно удален')
+        this.getUsers();
       });
     }
 
